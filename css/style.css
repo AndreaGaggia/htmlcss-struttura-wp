@@ -10,7 +10,17 @@ body {
 }
 
 /* utility classes */
+.rounded_corners {
+  border-radius: 5px;
+}
 
+.p20 {
+  padding: 20px;
+}
+
+.lh-x2 {
+  line-height: 2em
+}
 
 
 /* /utility classes */
@@ -34,7 +44,7 @@ div.head-wall {
   width: 40%;
 }
 
-.head-wall > img, h2 {
+.head-wall > img, h2.header-title {
   transform: translateY(40px);
 }
 
@@ -42,7 +52,7 @@ nav {
   background-color: #666666;
 }
 
-h2, li a {
+h2.header-title, li a {
   text-transform: uppercase;
 }
 
@@ -62,4 +72,44 @@ nav a {
   color: #fff;
   font-size: 11px;
   font-weight: bold;
+}
+
+aside {
+  width: 20%;
+}
+
+aside.left {
+  background-color: #fff;
+  padding: 3px 6px;
+}
+
+aside.left ul li {
+  color: green;
+  list-style: none;
+  margin: 8px 0;
+}
+
+h2.section-title {
+  display: inline-block;
+  width: 50%;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+aside > i {
+  font-size: 28px;
+  color: orange;
+  vertical-align: top;
+}
+
+div.central-column {
+  width: 50%;
+  background-color: #fff;
+}
+
+div.central-column > h2 {
+  text-transform: uppercase;
+  text-shadow: 2px 2px 1px lightgrey;
+  font-weight: normal;
+  margin-bottom: 35px;
 }
