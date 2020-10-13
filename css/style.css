@@ -6,4 +6,34 @@
 
 body {
   background-image: url(../img/body.png);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* utility classes */
+
+
+
+/* /utility classes */
+
+#container {
+  width: 60vw;
+  margin: auto;
+}
+
+div.head-wall {
+  height: 20vw;
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  border: 8px solid white;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.head-wall > img {
+  width: 40%;
+}
+
+.head-wall > img, h2 {
+  transform: translateY(40px);
 }
