@@ -13,13 +13,18 @@ body {
 .rounded_corners {
   border-radius: 5px;
 }
-
 .p20 {
   padding: 20px;
 }
-
 .lh-x2 {
   line-height: 2em
+}
+.float-left {
+  float: left;
+}
+.mr-3vw {
+  margin-right: 3vw;
+  /* considerando che il container è 60vh e gli elementi dimensionati occupano complessivamente il 90%, occorreva ripartire il 10% di 60vh in due margini */
 }
 
 
@@ -28,7 +33,10 @@ body {
 #container {
   width: 60vw;
   margin: auto;
+  padding: 18px 0;
 }
+
+/* Header */
 
 div.head-wall {
   height: 20vw;
@@ -67,11 +75,27 @@ nav li {
   cursor: pointer;
 }
 
+nav li:hover {
+  background-color: #131313;
+}
+
 nav a {
   text-decoration: none;
   color: #fff;
   font-size: 11px;
   font-weight: bold;
+}
+/* /Header */
+
+/* Main */
+main {
+  padding-top: 10px;
+}
+
+main::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
 aside {
@@ -113,3 +137,14 @@ div.central-column > h2 {
   font-weight: normal;
   margin-bottom: 35px;
 }
+
+div.text-widget {
+  background-color: #fff;
+  margin-bottom: 35px;
+}
+
+div.text-widget > h2 {
+  font-weight: normal;
+  margin-bottom: 35px;
+}
+/* /Main */
