@@ -176,5 +176,10 @@ div.icon-box > i {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+div.icon-box > i:hover {
+  color: green;
 }
 /* /Footer */
