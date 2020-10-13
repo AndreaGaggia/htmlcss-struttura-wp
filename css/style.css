@@ -26,8 +26,8 @@ div.head-wall {
   background-size: cover;
   border: 8px solid white;
   text-align: center;
-  color: #fff;
   position: relative;
+  color: #fff;
 }
 
 .head-wall > img {
@@ -36,4 +36,30 @@ div.head-wall {
 
 .head-wall > img, h2 {
   transform: translateY(40px);
+}
+
+nav {
+  background-color: #666666;
+}
+
+h2, li a {
+  text-transform: uppercase;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
 }
