@@ -6,19 +6,9 @@
 
 body {
   background-image: url(../img/body.png);
-  font-family: 'Roboto', sans-serif;
 }
 
 /* utility classes */
-.rounded_corners {
-  border-radius: 5px;
-}
-.p20 {
-  padding: 20px;
-}
-.lh-x2 {
-  line-height: 2em
-}
 .float-left {
   float: left;
 }
@@ -26,8 +16,6 @@ body {
   margin-right: 3vw;
   /* considerando che il container è 60vh e gli elementi dimensionati occupano complessivamente il 90%, occorreva ripartire il 10% di 60vh in due margini */
 }
-
-
 /* /utility classes */
 
 #container {
@@ -37,53 +25,16 @@ body {
 }
 
 /* Header */
-
 div.head-wall {
   height: 20vw;
-  background-image: url(../img/header.jpg);
-  background-size: cover;
+  background-color: red;
   border: 8px solid white;
-  text-align: center;
   position: relative;
-  color: #fff;
-}
-
-.head-wall > img {
-  width: 40%;
-}
-
-.head-wall > img, h2.header-title {
-  transform: translateY(40px);
 }
 
 nav {
-  background-color: #666666;
-}
-
-h2.header-title, li a {
-  text-transform: uppercase;
-}
-
-nav ul {
-  text-align: center;
-}
-
-nav li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-  cursor: pointer;
-}
-
-nav li:hover {
-  background-color: #131313;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 11px;
-  font-weight: bold;
+  background-color: blue;
+  height: 39px;
 }
 /* /Header */
 
@@ -102,84 +53,22 @@ aside {
   width: 20%;
 }
 
-aside.left {
-  background-color: #fff;
-  padding: 3px 6px;
-}
-
-aside.left ul li {
-  color: green;
-  list-style: none;
-  margin: 8px 0;
-  text-transform: capitalize;
-}
-
-h2.section-title {
-  display: inline-block;
-  width: 50%;
-  text-transform: capitalize;
-  font-weight: normal;
-}
-
-aside > i {
-  font-size: 28px;
-  color: orange;
-  vertical-align: top;
+aside.left, div.central-column, div.text-widget {
+  background-color: yellow;
 }
 
 div.central-column {
   width: 50%;
-  background-color: #fff;
-}
-
-div.central-column > h2 {
-  text-transform: uppercase;
-  text-shadow: 2px 2px 1px lightgrey;
-  font-weight: normal;
-  margin-bottom: 35px;
 }
 
 div.text-widget {
-  background-color: #fff;
-  margin-bottom: 35px;
-}
-
-div.text-widget > h2 {
-  font-weight: normal;
   margin-bottom: 35px;
 }
 /* /Main */
 
 /* Footer */
 footer {
-  background-color: #fff;
-  padding: 3px;
-  text-align: center;
-  color: lightgrey;
-}
-
-footer::after{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-div.icon-box {
-  width: calc(100% / 3);
+  background-color: indigo;
   height: 15vh;
-  position: relative;
-}
-
-div.icon-box > i {
-  font-size: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-}
-
-div.icon-box > i:hover {
-  color: green;
 }
 /* /Footer */
